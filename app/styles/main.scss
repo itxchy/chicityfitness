@@ -122,6 +122,21 @@ body {
     padding-right: 0;
     padding-left: 0;
   }
+  .navbar-nav {
+    float: right;
+    font-size: 1.3em;
+
+      .action-btn {
+      padding: 8px;
+      vertical-align: middle;
+    
+      }
+
+  }
+
+  .navbar-static-top {
+    border-width: 0 0 0 0;
+  }
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
