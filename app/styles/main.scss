@@ -1,4 +1,5 @@
 $icon-font-path: '../fonts/';
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
 
 // bower:scss
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
@@ -18,6 +19,8 @@ $icon-font-path: '../fonts/';
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #eef0e7;
 }
 
 
@@ -46,6 +49,15 @@ body {
   width: auto;
 }
 
+.navbar-wrapper .session {
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav .session {
+  color: #fff;
+  font-size: 20px;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -69,6 +81,7 @@ background-size: cover;
   margin-bottom: 160px;
   background-color: rgba(0,0,0,0.6);
   border-radius: 10px;
+  padding: 10px;
 }
 
 /* Declare heights because of positioning of img element */
@@ -102,6 +115,10 @@ background-size: cover;
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.marketing {
+  background-color: #eef0e7;
+}
+
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
