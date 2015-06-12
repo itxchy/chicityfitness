@@ -16,10 +16,6 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
-    <!-- build:css styles/rates.css -->
-    <link rel="stylesheet" href="styles/rates.css">
-    <!-- endbuild -->
-
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -41,16 +37,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Chi City Fitness</a>
+              <a class="navbar-brand" href="/">Chi City Fitness</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
-                <li><a href="http://blog.chicityfitness.com/">Blog</a></li>
-                <li><a href="#meet-cory">Meet Cory</a></li>
+                <li><a href="http://blog.chicityfitness.com">Blog</a></li>
+                <li class="active"><a href="/meet-cory.html">Meet Cory</a></li>
                 <li><a href="/contact.html">Contact</a></li>
-                <li class="active"><a href="/rates.html">Rates</a></li>
-                <li><a class="btn btn-lg btn-primary action-btn session" href="/contact.html" role="button">Schedule a Session!</a></li>   
+                <li><a href="/rates.html">Rates</a></li>
+                <!-- TODO build schedule session forms -->
+                <li><a class="btn btn-lg btn-primary action-btn session" href="/contact.html" role="button">Schedule a Session!</a></li>              
               </ul>
             </div>
           </div>
@@ -59,127 +56,24 @@
       </div>
     </div>
 
-<!-- Rates Boxes -->
-    
-    <div class="ratesHeading">
-      <h1>Session Rates</h1>
+
+    <div class="textbox">
+      <p>Cory Martin was born and raised in Chicago. Throughout his childhood through high school, he remained very active in sports such as hockey and football. It wasn't until the age of 14, when he watched Pumping Iron (A documentary about Arnold Schwarzenegger and the Mr. Olympia bodybuilding competition) that he started becoming enthralled with fitness and nutrition. Little did he know at the time, fitness would become not only a hobby, but an obsession. </p>
+
+      <p>He continued to follow that passion at the University of Iowa--taking exercise physiology classes as his elective courses while majoring in business. Cory graduated with a bachelors degree in finance and economics, and worked in the corporate world for a few short years before realizing he should do what he loves. </p>
+
+      <p>Cory then enrolled in classes at the National Academy of Sports Medicine, and got certified as a personal trainer. Best decision he ever made! He loves watching his clients grow and accomplish their fitness goals and become happy healthy people.</p>
     </div>
-
-
-    <div class="ratesContainer">
-
-      <div class="singleSession">
-        <h2>Single Session</h2>
-          <table class="singleSessionTable">
-
-            <tr>
-                <td>5:30am</td>
-                <td rowspan="4" class="price">$65</td>
-            </tr>
-
-            <tr>
-              <td>8:30am</td>
-            </tr>
-
-            <tr>
-              <td>5:00pm</td>
-            </tr>
-
-            <tr>
-              <td>8:00pm</td>
-            </tr>
-
-            <tr>&nbsp;</tr>
-
-          </table>
-          <br><br>
-          <table class="singleSessionTable">
-
-            <tr>
-              <td>8:30am</td>
-              <td rowspan="2" class="price">$55</td>
-            </tr>
-
-            <tr>
-              <td>4:30pm</td>
-            </tr>
-
-            
-          </table>
-      </div>
-
-      <div class="multiSession">
-        <table class="multiSessionTable">
-          <tr>
-            <td><h2>5 Sessions</h2></td>
-            <td class="price">$275</td>
-          </tr>
-          <tr>
-            <td colspan="2">$55 per session</td>
-          </tr>
-
-          <tr>
-            <td><h2>10 Sessions</h2></td>
-            <td class="price">$520</td>
-          </tr>
-          <tr>
-            <td>$52 per session</td>
-            <td class="terms">1 FREE session if you pay in full, 
-              <br>
-              or 2 payments of $260.
-            </td>
-          </tr>
-
-          <tr>
-            <td><h2>15 Sessions</h2></td>
-            <td class="price">$735</td>
-          </tr>
-          <tr>
-            <td>$49 per session</td>
-            <td class="terms">1 FREE session if you pay in full, 
-              <br>
-              or 2 payments of $367.
-          </tr>
-
-          <tr>
-            <td><h2>20 Sessions</h2></td>
-            <td class="price">$920</td>
-          </tr>
-          <tr>
-            <td>$46 per session</td>
-            <td class="terms">2 FREE sessions if you pay in full, 
-              <br>
-              or 3 payments of $306.
-          </tr>
-
-          <tr>
-            <td><h2>25 Sessions</h2></td>
-            <td class="price">$1075</td>
-          </tr>
-          <tr>
-            <td>$43 per session</td>
-            <td class="terms">2 FREE sessions if you pay in full, 
-              <br>
-              or 3 payments of $358.
-          </tr>
-
-          <tr>
-            <td><h2>30 Sessions</h2></td>
-            <td class="price">$1200</td>
-          </tr>
-          <tr>
-            <td>$40 per session</td>
-            <td class="terms">3 FREE sessions if you pay in full, 
-              <br>
-              or 3 payments of $400, <br>
-              or 4 payments of $300.
-          </tr>
-        </table>
-      </div>
-
-    </div>
-
       
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Chi City Fitness</p>
+      </footer>
+
+    </div><!-- /.container -->
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

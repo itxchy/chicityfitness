@@ -152,7 +152,10 @@ background-size: cover;
 $box-bg: #157CD6;
 
 .ratesHeading {
-  margin: 100px 0 0 100px;
+  margin: 100px auto;
+  max-width: 800px;
+  display: block;
+  text-align: center;
 
   h1 {
     font-size: 4em;
@@ -161,6 +164,9 @@ $box-bg: #157CD6;
 
 .ratesContainer {
   color: #DAECFB;
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .singleSession {
@@ -209,6 +215,13 @@ $box-bg: #157CD6;
 iframe {
   display: block;
   margin: 0 auto;
+}
+
+/* MEET CORY */
+
+.textbox {
+  max-width: 500px;
+  margin: 200px auto 0 auto;
 }
 
 /* RESPONSIVE CSS
