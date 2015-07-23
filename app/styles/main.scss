@@ -59,21 +59,32 @@ body {
 }
 
 
-/* CUSTOMIZE THE CAROUSEL
+/* HEADER SLIDE SHOW & CALL TO ACTION BOX
 -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel {
+
+.headerPhoto {
+  position: absolute;
   height: 700px;
   margin-bottom: 60px;
 }
 
-/* Header background image */
+.headerPhoto img {
+  position: absolute;
+  z-index: 1;
+}
+
+.headerPhoto img.active {
+  z-index: 3;
+}
+
+/* Header background image
 .active {
 background: url(/images/header.jpg) no-repeat center center fixed;
 background-size: cover;
-
 }
+*/
+
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
