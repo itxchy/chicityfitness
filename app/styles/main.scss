@@ -66,16 +66,23 @@ body {
 .headerPhoto {
   position: absolute;
   height: 700px;
+  margin-top: 50px;
   margin-bottom: 60px;
 }
 
 .headerPhoto img {
   position: absolute;
   z-index: 1;
+  left: -350px;
+  //height: auto;
+  //display: block;
 }
 
 .headerPhoto img.active {
   z-index: 3;
+  left: -350px;
+  //height: auto;
+  //display: block;
 }
 
 /* Header background image
@@ -233,6 +240,7 @@ iframe {
 .textbox {
   max-width: 500px;
   margin: 200px auto 0 auto;
+  padding: 20px;
 }
 
 /* RESPONSIVE CSS
@@ -270,6 +278,11 @@ iframe {
       padding-right: 6px;
     }
 
+  }
+
+  .textbox {
+    max-width: 500px;
+    margin: 200px auto 0 auto;
   }
 
   /* The navbar becomes detached from the top, so we round the corners */
