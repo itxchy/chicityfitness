@@ -219,8 +219,14 @@ iframe {
 
 .textbox {
   max-width: 500px;
-  margin: 200px auto 0 auto;
-  padding: 20px;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+}
+
+.meet-cory img {
+  margin-top: 100px;
+  max-height: 400px;
+
 }
 
 /* RESPONSIVE CSS
@@ -262,7 +268,7 @@ iframe {
 
   .textbox {
     max-width: 500px;
-    margin: 200px auto 0 auto;
+    margin: 20px auto 0 auto;
   }
 
   /* The navbar becomes detached from the top, so we round the corners */
