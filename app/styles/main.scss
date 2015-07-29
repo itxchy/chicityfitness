@@ -23,7 +23,6 @@ body {
   background-color: #eef0e7;
 }
 
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -62,27 +61,15 @@ body {
 /* HEADER SLIDE SHOW & CALL TO ACTION BOX
 -------------------------------------------------- */
 
+// TODO make the background images cycle in this div
 
 .headerPhoto {
-  position: absolute;
+  position: relative;
   height: 700px;
   margin-top: 50px;
   margin-bottom: 60px;
-}
-
-.headerPhoto img {
-  position: absolute;
-  z-index: 1;
-  left: -350px;
-  //height: auto;
-  //display: block;
-}
-
-.headerPhoto img.active {
-  z-index: 3;
-  left: -350px;
-  //height: auto;
-  //display: block;
+  background: url('/images/header1.jpg');
+  transition: background 0.8s ease;
 }
 
 /* Header background image
@@ -112,17 +99,6 @@ background-size: cover;
   background-color: #777;
 
 }
-
-/* Not in use for now
-
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 700px;
-}
-*/
 
  /*  The indicator dots will be hidden for now. */
 .carousel-indicators {
@@ -304,6 +280,10 @@ iframe {
   .featurette-heading {
     font-size: 50px;
   }
+}
+
+footer {
+  padding: 0 50px 0 50px;
 }
 
 @media (min-width: 992px) {
