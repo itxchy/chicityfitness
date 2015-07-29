@@ -68,7 +68,8 @@ body {
   height: 700px;
   margin-top: 50px;
   margin-bottom: 60px;
-  background: url('/images/header1.jpg');
+  background: url('/images/header1.jpg') no-repeat center center fixed;
+  background-size: cover;
   transition: background 0.8s ease;
 }
 

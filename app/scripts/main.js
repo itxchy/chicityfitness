@@ -22,7 +22,17 @@ var imagesArray = [
 ];
 
 function headerSlides() {
-  var index = imageIndex++ % imagesArray.length;
+  //var index = imageIndex++ % imagesArray.length;
+
+  var index;
+
+  if (imageIndex < imagesArray.length) {
+    index = imageIndex++;
+  } else {
+    imageIndex = 0;
+    index = 0;
+  }
+
   $('.headerPhoto').css('background', 'url(\'' + imagesArray[index] + '\') no-repeat center center fixed');
 }
 
