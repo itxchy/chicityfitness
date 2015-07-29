@@ -38,5 +38,5 @@ function headerSlides() {
 
 $(document).ready(function() {
 
-  setInterval(headerSlides, 3000);
+  //setInterval(headerSlides, 3000);
 });
