@@ -13,7 +13,7 @@ function cycleImages() {
 
 //Thank you @JAM from Stack Overflow!
 
-var imageIndex = 0;
+var imageIndex = 1;
 var imagesArray = [
   '/images/header1.jpg',
   '/images/header2.jpg',
