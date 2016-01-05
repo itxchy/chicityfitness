@@ -1,6 +1,7 @@
 $icon-font-path: '../fonts/';
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
 
+
 // bower:scss
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -12,9 +13,8 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
-/* GLOBAL STYLES
+/* Global Styles
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
 body {
   padding-bottom: 40px;
@@ -23,7 +23,7 @@ body {
   background-color: #eef0e7;
 }
 
-/* CUSTOMIZE THE NAVBAR
+/* Navbar
 -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
@@ -58,35 +58,25 @@ body {
 }
 
 
-/* HEADER SLIDE SHOW & CALL TO ACTION BOX
+/* Header
 -------------------------------------------------- */
 
-// TODO make the background images cycle in this div
-
-.headerPhoto {
+.header-photo {
   position: relative;
   height: 700px;
   margin-top: 50px;
   margin-bottom: 60px;
-  background: url('/images/header1.jpg') no-repeat center center fixed;
+  background: url('/images/logo.png') no-repeat center center fixed;
   background-size: cover;
   transition: background 0.8s ease;
 }
 
-/* Header background image
-.active {
-background: url(/images/header.jpg) no-repeat center center fixed;
-background-size: cover;
-}
-*/
-
-
-/* Since positioning the image, we need to help out the caption */
+// call-to-action box
 .carousel-caption {
   z-index: 10;
-  margin-bottom: 160px;
-  background-color: rgba(0,0,0,0.6);
-  border-radius: 10px;
+  margin-bottom: 35rem;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 2rem;
   padding: 10px;
 
   h1 {
@@ -94,159 +84,48 @@ background-size: cover;
   }
 }
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 700px;
-  background-color: #777;
 
-}
-
- /*  The indicator dots will be hidden for now. */
-.carousel-indicators {
-  display: none;
-}
-
-/* Hiding the carousel arrows for now */
-.carousel-control {
-  display: none;
-}
-/* MARKETING CONTENT
+/* Tumblr info will go here
 -------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel */
+
 .marketing {
   background-color: #eef0e7;
 }
 
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
 
 /* Rates Tables
-------------------------- */
+-------------------------------------------------- */
+@import 'rates';
 
-$box-bg: #157CD6;
+/* Contact Form
+-------------------------------------------------- */
+@import 'contact';
 
-.ratesHeading {
-  margin: 100px auto;
-  max-width: 800px;
-  display: block;
-  text-align: center;
+/* Meet Cory
+-------------------------------------------------- */
 
-  h1 {
-    font-size: 4em;
-  }
-}
+@import 'meet-cory';
 
-.ratesContainer {
-  color: #DAECFB;
-  display: block;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.singleSession {
-  margin: 50px 0 0 100px;
-  padding: 5px 0 30px 30px;
-  max-width: 600px;
-  min-height: 200px;
-  background: $box-bg;
-  border-radius: 25px;
-
-
-}
-
-.singleSessionTable {
-  margin-left: 50px;
-}
-
-.price {
-  padding-left: 100px;
-  font-size: 3em;
-}
-
-.terms {
-  padding-left: 100px;
-}
-
-.multiSession {
-  margin: 50px 0 0 100px;
-  padding: 5px 0 30px 30px;
-  max-width: 600px;
-  min-height: 200px;
-  background: $box-bg;
-  border-radius: 25px;
-
-  h2 {
-    margin-top: 10px;
-  }
-}
-
-/* FORM CONTAINER */
-
-.form-container {
-  margin: 50px;
-}
-
-iframe {
-  display: block;
-  margin: 0 auto;
-}
-
-/* MEET CORY */
-
-.textbox {
-  max-width: 500px;
-  margin: 20px auto 0 auto;
-  padding: 10px;
-  font-size: 1.3em;
-}
-
-.meet-cory img {
-  margin-top: 100px;
-  max-height: 420px;
-
-}
-
-/* RESPONSIVE CSS
+/* Media queries
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
-  /* Navbar positioning foo */
+// Navbar positioning
   .navbar-wrapper {
     margin-top: 20px;
   }
+
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
   }
+
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
   }
+
   .navbar-nav {
     float: right;
     font-size: 1.5em;
@@ -256,7 +135,6 @@ iframe {
       vertical-align: middle;
       margin: 6px 0 0px 0;
       }
-
   }
 
   .navbar-fixed-top {
@@ -265,7 +143,6 @@ iframe {
     .container {
       padding-right: 6px;
     }
-
   }
 
   .textbox {
@@ -273,12 +150,12 @@ iframe {
     margin: 20px auto 0 auto;
   }
 
-  /* The navbar becomes detached from the top, so we round the corners */
+  // The navbar becomes detached from the top, so we round the corners
   .navbar-wrapper .navbar {
     border-radius: 0 0 4px 4px;
   }
 
-  /* Bump up size of carousel content */
+  // Bump up size of call-to-action content
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
@@ -291,7 +168,7 @@ iframe {
 }
 
 footer {
-  padding: 0 50px 0 50px;
+  padding: 0 50px;
 }
 
 @media (min-width: 992px) {
